@@ -20,7 +20,7 @@ function judgeCircle(moves) {
 
     var x = 0, y = 0;
 
-    if(moves.length % 2 == 0){
+    if(moves.length % 2 === 0){
 
         for(var i = 0; i < moves.length; i++){
             if(moves[i] == 'U'){
@@ -38,7 +38,7 @@ function judgeCircle(moves) {
         }
     }
 
-    if(x == 0 && y == 0){
+    if(x === 0 && y === 0){
         return true;
     }
     else
