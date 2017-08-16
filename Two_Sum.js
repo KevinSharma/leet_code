@@ -13,18 +13,23 @@ return [0, 1].
  * @return {number[]}
  */
 
-nums = [3,2,4];
-target = 6;
+nums = [2,5,5,11];
+target = 10;
 
 function twoSum(nums, target) {
 
-    for( var i = 0; i < nums.length - 1; i++){
-        for(var j = 1; j < nums.length; j++){
-            if(nums[i] + nums[j] == target){
+    var i = 0;
+    while( i < nums.length - 1 ){
+        var j = i + 1;
+        while( j < nums.length ){
+            if(nums[i] + nums[j] === target){
                 return [i, j];
             }
+            j++;
         }
+        i++;
     }
 }
 
 var sum = twoSum(nums, target);
+console.log(sum);
