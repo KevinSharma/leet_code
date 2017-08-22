@@ -1,3 +1,5 @@
+// Given an integer, return its base 7 string representation.
+
 function convertToBase7(num) {
     var base_7 = '';
 
